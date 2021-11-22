@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navListItems {
+    display: flex;
+    justify-content: end;
+}
+
+.navListItem {
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    cursor: pointer;
+}
