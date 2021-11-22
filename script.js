@@ -63,3 +63,53 @@ for(let j = 0; j < historySubTitles.length; j++) {
         contentItems[j].style.display = 'flex'
     })
 }
+
+
+/* PLAYERS SECTION this section was created using only DOM*/
+
+const playerInfos = [
+    {
+        name: 'Mert Günok', number: '34', position: 'Goalkeeper', imgUrl: 'https://images.bjk.com.tr/images/players/mert-gunok_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Ersin Destanoglu', number:'30', position: 'Goalkeeper', imgUrl: 'https://images.bjk.com.tr/images/players/ersin-destanoglu-2-2_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Emre Bilgin', number: '61', position: 'Goalkeeper', imgUrl: 'https://images.bjk.com.tr/images/players/emre-bilgin-2_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Ridvan Yilmaz', number: '3', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/ridvan-yilmaz-2-2_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Serdar Saatci', number: '46', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/serdar-saatci-2_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Domagoj Vida', number: '24', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/domagoj-vida_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/hr.png'
+    },
+    {
+        name: 'Welinton Souza Silva', number: '23', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/welinton-souza-silva_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/br.png'
+    },
+    {
+        name: 'Francisco Montero', number: '4', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/francisco-montero_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/es.png'
+    },
+    {
+        name: 'Valentin Rosier', number: '2', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/valentin-rosier_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/fr.png'
+    },
+]
+
+const playersContainer = document.getElementById('players')
+playersContainer.style.display = 'flex'
+playersContainer.style.justifyContent = 'center'
+playersContainer.style.flexWrap = 'wrap'
+
+for(let i = 0; i <playerInfos.length; i++) {
+    let newDiv = document.createElement('div')
+    let img = document.createElement('img')
+    img.src = playerInfos[i].imgUrl
+    let p = document.createElement('p')
+    let name = document.createTextNode(playerInfos[i].name)
+    p.appendChild(name)
+    newDiv.appendChild(img)
+    newDiv.appendChild(p)
+    playersContainer.appendChild(newDiv)
+}

@@ -108,7 +108,7 @@ body {
 }
 
 .history-content {
-
+    margin: 1%;
     width: 70%;
 }
 
@@ -148,3 +148,5 @@ body {
 .history-sub-titles-listItems li:hover {
     color: red;
 }
+
+/* PLAYERS SECTION*/
