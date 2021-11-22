@@ -5,6 +5,8 @@ body {
 }
 
 .nav {
+    position: fixed;
+    top: 0;
     display: block;
     width: 100%;
     height: 50px;
@@ -21,4 +23,122 @@ body {
     justify-content: center;
     margin-right: 5%;
     cursor: pointer;
+    color: white;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+
+.slider-img {
+    width: 100%;
+    height: 500px;
+}
+
+.prev, .next {
+    background-color: rgb(3, 3, 3);
+    color: red;
+    font-size: large;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about {
+    display: block;
+}
+
+.about-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: block;
+}
+
+.about-content-p {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-table tbody {
+    display: block;
+}
+
+.about-table-title {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+.gray {
+    background-color: #f2f2f2;
+}
+
+.history {
+    display: block;
+}
+
+.history-title {
+    display: flex;
+    justify-content: center;
+}
+
+.history-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-sub-titles {
+    width: 30%;
+}
+
+.history-content {
+
+    width: 70%;
+}
+
+.history-content-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.history-content-item img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history-content-item p {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.history-sub-titles-listItems {
+    cursor: pointer;
+    list-style: none;
+}
+
+.history-sub-titles-listItems li {
+    margin-bottom: 5%;
+}
+
+.history-sub-titles-listItems li:hover {
+    color: red;
 }
