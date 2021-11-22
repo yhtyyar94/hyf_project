@@ -16,6 +16,7 @@ let counter = 0
 
 sliderImg.style.backgroundImage = `url(${imgUrls[counter]})`
 
+//handle prev image
 const prevImage = () => {
     if(counter == 0) {
         counter = imgUrls.length - 1
@@ -26,7 +27,7 @@ const prevImage = () => {
     }
    
 }
-
+//handle next image
 const nextImage = () => {
     if(counter == imgUrls.length - 1) {
         counter = 0
@@ -37,5 +38,28 @@ const nextImage = () => {
     }
 }
 
+//event listeners
 prev.addEventListener('click', prevImage)
 next.addEventListener('click', nextImage)
+
+
+
+/*HISTORY SECTION*/
+
+//hide all contents except first
+const contentItems = document.getElementsByClassName('history-content-item')
+for(let i = 1; i < contentItems.length; i++) {
+    contentItems[i].style.display = 'none'
+}
+
+//handling on click function of history subtitles
+const historySubTitles = document.getElementsByClassName('history-listItem')
+for(let j = 0; j < historySubTitles.length; j++) {
+    historySubTitles[j].addEventListener('click', () => {
+        for(let i = 0; i < contentItems.length; i++) {
+            contentItems[i].style.display = 'none'
+        }
+
+        contentItems[j].style.display = 'flex'
+    })
+}

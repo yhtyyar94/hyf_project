@@ -118,6 +118,11 @@ body {
     flex-direction: column;
 }
 
+.history-content-item h3 {
+    display: flex;
+    justify-content: center;
+}
+
 .history-content-item img {
     width: 60%;
     margin-left: auto;
@@ -128,6 +133,7 @@ body {
     display: flex;
     justify-content: center;
     font-size: medium;
+    flex-direction: column;
 }
 
 .history-sub-titles-listItems {
