@@ -95,12 +95,77 @@ const playerInfos = [
     {
         name: 'Valentin Rosier', number: '2', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/valentin-rosier_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/fr.png'
     },
+    {
+        name: 'Umut Meras', number: '77', position: 'Defender', imgUrl: 'https://images.bjk.com.tr/images/players/umut-meras_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Necip Uysal', number: '20', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/necip-uysal_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Oguzhan Ozyakup', number: '10', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/oguzhan-ozyakup_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Atiba Hutchinson', number: '13', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/atiba-hutchinson_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/ca.png'
+    },
+    {
+        name: 'Gokhan Tore', number: '11', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/gokhan-tore_229x270_000002.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Georges-Kevin Nkoudou', number: '7', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/georges-kevin-nkoudou_229x270_000003.png', nationality:'https://bjk.com.tr/img/country-flags/png100px/fr.png'
+    },
+    {
+        name: 'Ajdin Hasic', number: '19', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/ajdin-hasic_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/ba.png'
+    },
+    {
+        name: 'Huseyin Atakan Uner', number: '27', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/huseyin-atakan-uner_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Josef de Souza', number: '5', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/josef-de-souza_229x270_000003.png', nationality:'https://bjk.com.tr/img/country-flags/png100px/br.png'
+    },
+    {
+        name: 'Rachid Ghezzal', number: '18', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/rachid-ghezzal_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/dz.png'
+    },
+    {
+        name: 'Salih Ucan', number: '8', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/salih-ucan_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Mehmet Topal', number: '14', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/mehmet-topal_229x270_000002.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Alex Teixeira', number: '90', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/alex-teixeira_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/br.png'
+    },
+    {
+        name: 'Can Bozdogan', number: '12', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/can-bozdogan_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Miralem Pjanic', number: '15', position: 'Midfielder', imgUrl: 'https://images.bjk.com.tr/images/players/miralem-pjanic_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/ba.png'
+    },
+    {
+        name: 'Cyle Christopher Larin', number: '17', position: 'Forward', imgUrl: 'https://images.bjk.com.tr/images/players/cyle-christopher-larin_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/ca.png'
+    },
+    {
+        name: 'Guven Yalcin', number: '50', position: 'Forward', imgUrl: 'https://images.bjk.com.tr/images/players/guven-yalcin_229x270.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Kenan Karaman', number: '28', position: 'Forward', imgUrl: 'https://images.bjk.com.tr/images/players/kenan-karaman_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/tr.png'
+    },
+    {
+        name: 'Michy Batshuayi', number: '9', position: 'Forward', imgUrl: 'https://images.bjk.com.tr/images/players/michy-batshuayi_229x270_000001.jpg', nationality:'https://bjk.com.tr/img/country-flags/png100px/be.png'
+    }
 ]
 
 const playersContainer = document.getElementById('players')
 playersContainer.style.display = 'flex'
 playersContainer.style.justifyContent = 'center'
 playersContainer.style.flexWrap = 'wrap'
+//section title
+let h1 = document.createElement('h1')
+let textH1 = document.createTextNode('PLAYERS')
+h1.appendChild(textH1)
+//style h1
+h1.style.marginLeft = '50%' 
+h1.style.marginRight = '50%'
+playersContainer.appendChild(h1)
 
 for(let i = 0; i <playerInfos.length; i++) {
     //new Div for each player
