@@ -103,13 +103,72 @@ playersContainer.style.justifyContent = 'center'
 playersContainer.style.flexWrap = 'wrap'
 
 for(let i = 0; i <playerInfos.length; i++) {
+    //new Div for each player
     let newDiv = document.createElement('div')
+    //created img tag for player
     let img = document.createElement('img')
     img.src = playerInfos[i].imgUrl
+    
+    // created text node and appended p tag for player name
     let p = document.createElement('p')
     let name = document.createTextNode(playerInfos[i].name)
     p.appendChild(name)
+   
+    //created text node and appended p tag for player number
+    let numberP = document.createElement('p')
+    let number = document.createTextNode(playerInfos[i].number)
+    numberP.appendChild(number)
+
+    //created img tag for national flag
+    let imgFlag = document.createElement('img')
+    imgFlag.src = playerInfos[i].nationality
+
+    //created text node and appended p tag for player position
+    let positionP = document.createElement('p')
+    let position = document.createTextNode(playerInfos[i].position)
+    positionP.appendChild(position)
+
+
+    /* STYLES */
+    //newDiv
+    newDiv.style.margin = '5px'
+
+    //img player
+  
+
+    //img flag
+    imgFlag.style.float = 'right'
+    imgFlag.style.marginTop = '-43px'
+    imgFlag.style.width = '20%'
+    imgFlag.style.zIndex = '1'
+
+    //number
+    numberP.style.backgroundColor = 'black'
+    numberP.style.color = 'white'
+    numberP.style.width = '20%'
+    numberP.style.padding = '5px'
+    numberP.style.marginTop = '-3px'
+    numberP.style.marginLeft = '5px'
+    numberP.style.zIndex = '1'
+    numberP.style.textAlign = 'center'
+
+    //position
+    positionP.style.marginTop = '-40px'
+    positionP.style.marginLeft = '75px'
+    positionP.style.fontStyle = 'italic'
+
+    //player name
+    p.style.textAlign = 'start'
+    p.style.fontWeight = 'bold'
+
+
+
+    //appended all components to newDiv
     newDiv.appendChild(img)
+    newDiv.appendChild(numberP)
+    newDiv.appendChild(imgFlag)
+    newDiv.appendChild(positionP)
     newDiv.appendChild(p)
+    
     playersContainer.appendChild(newDiv)
 }
